@@ -17,6 +17,7 @@ public class MainClass {
             bag.add(new Thread(cars[i]));
             bag.get(i).start();
         }
+
         for (int i = 0; i < cars.length; i++){
             bag.get(i).join();
         }
